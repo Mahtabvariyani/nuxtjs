@@ -1,13 +1,9 @@
 <template>
   <div>
- 
-    <slot>
-
-    </slot>
+    
+    <slot> </slot>
   </div>
 </template>
 <script>
-
-import  'assets/css/tailwind.css'
-
+import "assets/css/tailwind.css";
 </script>
