@@ -1,6 +1,8 @@
 <template>
-  <div>
+  <div :class="{ 'dark': colorMode.value === 'dark' }">
     <slot> </slot>
   </div>
 </template>
-<script setup></script>
+<script setup>
+
+</script>

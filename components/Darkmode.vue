@@ -12,7 +12,8 @@ const colorMode = useColorMode();
 </script>
 
 <template>
-  <DropdownMenu>
+  <div :class="{ 'dark': colorMode.value === 'dark' }">
+    <DropdownMenu>
     <DropdownMenuTrigger as-child>
       <Button variant="outline">
         <Icon
@@ -21,7 +22,7 @@ const colorMode = useColorMode();
         />
         <Icon
           icon="radix-icons:sun"
-          class="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100"
+          class="absolute h-[1.2rem] w-[1.2rem] rotate-90 scale-0 transition-all dark:rotate-0 dark:text-white dark:scale-100"
         />
         <span class="sr-only">Toggle theme</span>
       </Button>
@@ -38,4 +39,6 @@ const colorMode = useColorMode();
       </DropdownMenuItem>
     </DropdownMenuContent>
   </DropdownMenu>
+    </div>
+
 </template>

@@ -1,17 +1,12 @@
 <template>
-    <div class="text-black">
-      Hello From index
-      <Button>Click me</Button>
-      <Button class="ml-4">
-      Hello
-      fvf
-    </Button>
-    </div>
+  <div class="text-lg h-screen p-10">
+    Hello From index
+    <Button>Click me</Button>
+    <Button class="ml-4 w-[100px]"> Smile 😅 </Button>
+  </div>
+</template>
 
-  </template>
-  
-  <script setup>
-  import Button from '~/components/ui/button/Button.vue';
+<script setup lang="ts">
 
-  </script>
-  
+import Button from "~/components/ui/button/Button.vue";
+</script>

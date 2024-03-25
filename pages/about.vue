@@ -1,6 +1,5 @@
 <template>
-    <div class="text-white">
-     
-        Hello From About page
-    </div>
+  <div class="">
+    <Card />
+  </div>
 </template>
