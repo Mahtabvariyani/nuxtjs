@@ -1,6 +1,6 @@
 <template>
   <div class="p-10 flex flex-wrap justify-between">
-    <div
+    <!-- <div
       v-for="profile in profiles"
       :key="profile.to"
       class="border-2 mb-5 border-pink-800 block max-w-[18rem] bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white"
@@ -24,9 +24,9 @@
           {{ profile.about }}
         </p>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 <script setup>
-import { profiles } from "~/constant";
+// import { profiles } from "~/constant";
 </script>
