@@ -4,7 +4,6 @@
       <img :src="item.photoURL" :alt="item.name" class="cart-item__image" />
       <figcaption class="cart-item__title text-white">{{ item.name }}</figcaption>
     </figure>
-
     <div>
       <button aria-label="Remove item" @click="$emit('remove-button-click')">
         <Trash />
@@ -22,7 +21,6 @@ const props = defineProps<{
   item: {
     photoURL: string;
     name: string;
-    // Add other necessary properties here
   };
 }>();
 </script>

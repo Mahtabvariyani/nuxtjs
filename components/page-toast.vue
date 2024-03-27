@@ -1,10 +1,10 @@
 <template>
-    <output class="page-toast">
+    <output class="flex align-middle items-center justify-between bg-green-400 text-green-700 p-5 border-lg border-2 border-green-700">
       <slot />
   
-      <button v-if="isClosable" @click="$emit('close')">
-        <span class="visually-hidden">Close</span>
-        <X />
+      <button v-if="isClosable" @click="$emit('close')" class="flex">
+        <span class="pr-1">Close</span>
+        <X class="text-red-700 pt-1" />
       </button>
     </output>
   </template>
@@ -18,16 +18,3 @@
   
   defineProps<ToastProps>();
   </script>
-  
-  <style>
-  .page-toast {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: lightgreen;
-    border: 1px solid green;
-    color: green;
-    padding: 1rem;
-  }
-  </style>
-  
