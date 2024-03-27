@@ -10,7 +10,7 @@
         >
       </div>
       <NuxtLink to="/checkout">
-        <button>Cart</button>
+        <Button class="text-pink-500 border-pink-700 border bg-transparent hover:bg-slate-400 hover:opacity-40 ">Cart</Button>
       </NuxtLink>
       <!-- <SlideOver /> -->
 
@@ -19,5 +19,6 @@
   </div>
 </template>
 <script setup>
+import Button from '@/components/ui/button/Button'
 import { navItems } from "~/constant";
 </script>

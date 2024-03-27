@@ -4,8 +4,8 @@
  
 
 body{
-    background-color: rgb(72, 72, 119);
-
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
 }
 
 
