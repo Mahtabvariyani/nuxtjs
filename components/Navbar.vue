@@ -9,7 +9,9 @@
           >{{ navItem.label }}</NuxtLink
         >
       </div>
-      <Darkmode />
+      <SlideOver />
+
+      <!-- <Darkmode /> -->
     </nav>
   </div>
 </template>
