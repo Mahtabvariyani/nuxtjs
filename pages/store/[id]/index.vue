@@ -5,7 +5,7 @@
     <p>Price: {{ product.Price }}</p>
     <img :src="product.photoURL" alt="" />
 
-    <button class="m-2 p-2 " @click="handleAddToCart">Add to cart</button>
+    <button class="m-2 p-2" @click="handleAddToCart">Add to cart</button>
 
     <div v-if="toastShouldShow">
       <page-toast is-closable @close="() => showToast(false)">

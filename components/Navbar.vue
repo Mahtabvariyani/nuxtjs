@@ -9,7 +9,10 @@
           >{{ navItem.label }}</NuxtLink
         >
       </div>
-      <SlideOver />
+      <NuxtLink to="/checkout">
+        <button>Cart</button>
+      </NuxtLink>
+      <!-- <SlideOver /> -->
 
       <!-- <Darkmode /> -->
     </nav>
