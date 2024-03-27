@@ -13,7 +13,9 @@ import Button from "~/components/ui/button/Button.vue";
 <template>
   <Sheet>
     <SheetTrigger class="pl-3">
-      <Button> Open </Button>
+      <NuxtLink to="/checkout">
+        <Button> Cart </Button>
+      </NuxtLink>
     </SheetTrigger>
     <SheetContent>
       <SheetHeader>
