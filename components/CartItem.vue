@@ -1,9 +1,12 @@
 <template>
   <div class="cart-item m-3 text-white" data-testid="cart-item">
-    <figure class="cart-item__image-container">
+    <div class="cart-item__image-container">
       <img :src="item.photoURL" :alt="item.name" class="cart-item__image" />
-      <figcaption class="cart-item__title text-white">{{ item.name }}</figcaption>
-    </figure>
+      <ShoppingBasket class="text-pink-300 text-2xl" />
+
+      <div class="cart-item__title text-white">{{ item.name }}</div>
+    </div>
+
     <div>
       <button aria-label="Remove item" @click="$emit('remove-button-click')">
         <Trash />
@@ -14,7 +17,9 @@
 
 <script setup lang="ts">
 import { Trash } from "lucide-vue-next";
-import { defineProps } from 'vue';
+import { ShoppingBasket } from 'lucide-vue-next';
+
+import { defineProps } from "vue";
 
 // Define props
 const props = defineProps<{
