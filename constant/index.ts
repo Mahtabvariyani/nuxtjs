@@ -116,3 +116,18 @@ export const Products = [
     photoURL:'https://www.premiumbeat.com/blog/wp-content/uploads/2020/07/Camera-Tech-Cover-photo.jpg?w=875&h=490&crop=1'
   },
 ];
+
+
+
+export const footerItems = [
+  {
+    name: "Github",
+    icon: "mdi:github",
+    to: "https://github.com/Mahtabvariyani",
+  },
+  {
+    name: "Linkedin",
+    icon: "skill-icons:linkedin",
+    to: "https://www.linkedin.com/in/mahvariyani/",
+  },
+];
